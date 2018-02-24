@@ -8,7 +8,7 @@ describe('directive malarkey', function() {
   let vm;
   let element;
 
-  beforeEach(angular.mock.module('audiologFrontend'));
+  beforeEach(angular.mock.module('myMessageFront'));
 
   beforeEach(inject(($compile, $rootScope, githubContributor, $q) => {
     spyOn(githubContributor, 'getContributors').and.callFake(() => {
