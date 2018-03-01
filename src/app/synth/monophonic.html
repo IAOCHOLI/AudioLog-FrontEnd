@@ -1,0 +1,44 @@
+<div class="Synth">
+
+    <div id="monoSynthOneLevel">
+        <label class="label">Level</label>
+    </div>
+
+    <div id="monoSynthOne"></div>
+
+    <div id="EditmonoSynthOne"></div>
+</div>
+
+
+
+
+
+<script>
+
+var pad1 = new Nexus.Button('#monoSynthOne', {
+    'size': [150, 150],
+    'mode': 'aftertouch',
+ 
+  })
+
+pad1Level.on('change', function(value){
+   vol.volume.value = parseInt(value);
+   if(value == 0){
+     vol.mute = true;
+   }
+   else vol.mute= false;
+
+  });
+  
+  
+  var pad1Level = new Nexus.Dial('#monoSynthOneLevel', {
+    'size': [50, 50],
+    'interaction': 'vertical', // "radial", "vertical", or "horizontal"
+    'mode': 'relative', // "absolute" or "relative"
+    'min': -30,
+    'max': 10,
+    'step': 1,
+    'value': -20
+  })
+
+</script>
