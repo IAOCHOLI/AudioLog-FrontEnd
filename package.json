@@ -1,7 +1,9 @@
 {
   "name": "audiologFrontend",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "couchbase": "^2.4.4"
+  },
   "scripts": {
     "test": "gulp test"
   },
